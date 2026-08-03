@@ -1,14 +1,32 @@
-result
-__pycache__/
-.idea/
-venv/
-*/config/*
-.pio/
-!connectivity/config/default.json
-!connectivity/config/logging_template.py
-!connectivity/config/logging.py
-!connectivity/config/__init__.py
-!connectivity/config/README.md
-.vscode/*
+# Dependencies
+node_modules/
+
+# Build
+dist/
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Database (sqlite local)
+*.sqlite
+*.sqlite-journal
+*.db
+data/
+
+# Logs
 logs/
-poetry.lock
+*.log
+npm-debug.log*
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
